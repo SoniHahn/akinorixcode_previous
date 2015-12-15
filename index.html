@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akinori X Code</title>
+
+  <!-- Custom Font -->
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="http://assets.runemadsen.com/rune.browser.js"></script>
+  <script src="rune.js"></script>
+  <script src="rune.min.js"></script>
+  <script src="js/font.browser.js"></script>
+  <script src="js/rune.noise.js"></script>
+
+
+
+</head>
+<body>
+  <div class="container-fluid" id="mycontainer">
+    <div class="row">
+      <div class="col-md-10">
+        <div id="canvas1"></div>
+      </div>
+      <div class="col-md-2 text-left title">
+        Akinori X Code
+      </div>
+      <div id="mycarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/main_blur.jpg" id="bg"  class="img-responsive">
+            <div class="carousel-caption">
+             <p>Create your own pattern!</p>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+
+
+   <form id="form">
+    <div class="selector col-md-6">
+      <div class="selectorText">
+        Select characters you want :
+      </div>
+      <input id="Aki1" type="checkbox" name="characters" value="Aki1" />
+      <label class="character-cc Aki1" for="Aki1"></label>
+      <input id="Aki2" type="checkbox" name="characters" value="Aki2" />
+      <label class="character-cc Aki2"for="Aki2"></label>
+      <input id="Aki3" type="checkbox" name="characters" value="Aki3" />
+      <label class="character-cc Aki3"for="Aki3"></label>
+      <input id="Aki4" type="checkbox" name="characters" value="Aki4" />
+      <label class="character-cc Aki4"for="Aki4"></label>
+      <input id="Aki5" type="checkbox" name="characters" value="Aki5" />
+      <label class="character-cc Aki5"for="Aki5"></label>
+    </div>
+
+    <div class="selector col-md-3">
+      <div class="selectorColor">
+        Select a color mode :
+      </div>
+      <input id="black" type="radio" name="charactersColor" value="black" />
+      <label class="characterColor-cc black" for="black"></label>
+      <input id="color" type="radio" name="charactersColor" value="color" />
+      <label class="characterColor-cc color"for="color"></label>
+    </div>
+
+    <div class="selector col-md-3 center">
+      <div class="selectorSubmit">
+        <button type="submit" class="btn btn-default" >Create a Pattern</button>
+      </div>
+    </div>
+  </form>
+
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/sketch.js"></script>
+  <script type="text/javascript" src="js/sketch2.js"></script>
+  <script type="text/javascript" src="js/sketch3.js"></script>
+  <script type="text/javascript" src="js/sketch4.js"></script>
+  <script type="text/javascript" src="js/sketch5.js"></script>
+  <!-- JQuery - Can remove if not using -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script>
+  var rects = document.getElementsByTagName('rect');
+
+  for (var i = 0; i < rects.length; i ++) {
+    rects[i].setAttribute('stroke','rgb(255,255,255)');
+  };
+
+  </script>
+
+</body>
+</html>
